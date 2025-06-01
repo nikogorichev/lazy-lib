@@ -1,4 +1,4 @@
-import cls from "./Text.module.scss";
+import cls from "./Text.module.css";
 import { classNames } from "@/lib/helpers";
 
 type TextTheme = "primary" | "error";
