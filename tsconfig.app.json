@@ -22,10 +22,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "declaration": true,
-    "declarationDir": "dist",
-    "emitDeclarationOnly": false,
-    "outDir": "dist",
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]

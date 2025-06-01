@@ -2,16 +2,18 @@
   "name": "lazy-lib",
   "private": true,
   "version": "1.0.0",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.es.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/types/index.d.ts",
+  "style": "./dist/lazy-lib.css",
   "files": [
     "dist"
   ],
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "rm -rf dist && vite build && tsc -p tsconfig.build.json --noEmitOnError",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
     "lint": "eslint .",
     "preview": "vite preview"
   },
